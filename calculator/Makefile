@@ -23,4 +23,3 @@ $(RELEASE_EXEC): trig_calc.cpp
 clean:
 	rm -f $(RELEASE_EXEC) $(DEBUG_EXEC)
 
-f
