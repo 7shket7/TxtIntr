@@ -4,9 +4,9 @@
 
 RELEASE_FLAGS = -O2 -Wall -DNDEBUG
 DEBUG_FLAGS   = -g -O0 -Wall
-RELEASE_EXEC  = trid_calc
-DEBUG_EXEC    = trid_calc-dbg
-SOURCE        = trid_calc.cpp
+RELEASE_EXEC  = trig_calc
+DEBUG_EXEC    = trig_calc-dbg
+SOURCE        = trig_calc.cpp
 
 all: debug release
 
