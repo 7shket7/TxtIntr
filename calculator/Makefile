@@ -1,10 +1,12 @@
+# Усложненный make-file.  Введены переменные для параметров компиляции и исполняемых файлов
+
 .PHONY: all debug release clean
 
 RELEASE_FLAGS = -O2 -Wall -DNDEBUG
 DEBUG_FLAGS   = -g -O0 -Wall
-RELEASE_EXEC  = trig_calc
-DEBUG_EXEC    = trig_calc-dbg
-SOURCE        = trig_calc.cpp
+RELEASE_EXEC  = trid_calc
+DEBUG_EXEC    = trid_calc-dbg
+SOURCE        = trid_calc.cpp
 
 all: debug release
 
@@ -16,7 +18,8 @@ $(DEBUG_EXEC): trig_calc.cpp
 release: $(RELEASE_EXEC)
 
 $(RELEASE_EXEC): trig_calc.cpp
-	g++ $(RELEASE_FLAGS) trig_calc -o $(RELEASE_EXEC)
+	g++ $(RELEASE_FLAGS) trig_calc.cpp -o $(RELEASE_EXEC)
 
 clean:
 	rm -f $(RELEASE_EXEC) $(DEBUG_EXEC)
+
